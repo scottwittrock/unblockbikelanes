@@ -1,0 +1,16 @@
+branches:
+  only:
+  - master
+
+jobs: 
+  include: 
+    - stage
+      name: "Deploy web production"
+      language: node_js
+      install:
+        - cd web && npm install 
+        - npm install -g firebase-tools
+        - npm install -g @angular/cli
+      script: 
+        - npm run deploy-prod
+        
