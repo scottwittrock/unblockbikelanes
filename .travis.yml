@@ -6,9 +6,9 @@ branches:
 
 name: "Deploy web production"
 install:
-  - cd web && npm install 
-  - npm install -g firebase-tools
+  - cd npm install -g firebase-tools
   - npm install -g @angular/cli
-script: 
+script:
+  - ng lint 
   - npm run deploy-prod
         
