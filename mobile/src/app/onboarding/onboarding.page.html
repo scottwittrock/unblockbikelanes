@@ -1,14 +1,33 @@
-<ion-content>
-    <ion-slides pager="true" [options]="slideOpts">
-        <ion-slide>
-            <h1>Slide 1</h1>
-        </ion-slide>
-        <ion-slide>
-            <h1>Slide 2</h1>
-        </ion-slide>
-        <ion-slide>
-            <h1>Slide 3</h1>
-        </ion-slide>
-    </ion-slides>
-
+<ion-content color='light' padding scroll-y="false" no-padding>
+    <ion-grid>
+        <ion-row size="12" align-items-center>
+            <ion-col>
+                <ion-slides pager="true" [options]="slideOpts">
+                    <ion-slide>
+                        <div>
+                            <i class="material-icons">directions_bike</i>
+                            <h1>#UnblockBikeLanes</h1>
+                            <p>Helping collect and analyze reports of blocked bike lanes.</p>
+                        </div>
+                    </ion-slide>
+                    <ion-slide>
+                        <div>
+                            <i class="material-icons">aspect_ratio</i>
+                            <h1>Crowd Sourcing Data</h1>
+                            <p>Analyzing data from <a href="https://twitter.com/search?q=%23unblockbikelanes"
+                                    target="_blank">#unblockbikelanes</a> and user submitted images.</p>
+                        </div>
+                    </ion-slide>
+                    <ion-slide>
+                        <div>
+                            <i class="material-icons">commute</i>
+                            <h1>Coming soon...</h1>
+                            <p>Data portal, iOS, and Android apps</p>
+                            <ion-button href="home/tabs/tab2">Get Started</ion-button>
+                        </div>
+                    </ion-slide>
+                </ion-slides>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>
