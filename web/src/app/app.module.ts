@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Angular Material
@@ -24,6 +24,7 @@ import { AppComponent } from './app.component';
         MatToolbarModule,
         MatTabsModule
     ],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
     providers: [],
     bootstrap: [AppComponent]
 })
